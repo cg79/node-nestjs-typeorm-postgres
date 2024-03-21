@@ -12,6 +12,7 @@ $ npm install
 ## Running the app
 
 ```bash
+$ docker compose up
 $ npm run migration:generate
 $ npm run migration:run
 ```

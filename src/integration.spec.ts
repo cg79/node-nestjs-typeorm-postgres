@@ -1,10 +1,10 @@
 import * as supertest from 'supertest';
 import * as jwt from 'jsonwebtoken';
 import { Test, TestingModule } from '@nestjs/testing';
-import { AppModule } from '../src/app.module'; // Adjust the path as needed
+import { AppModule } from './app.module'; // Adjust the path as needed
 import { INestApplication } from '@nestjs/common';
 import { JwtModule } from '@nestjs/jwt';
-import { JwtStrategy } from '../src/api/auth/strategies/jwt.strategy';
+import { JwtStrategy } from './api/auth/strategies/jwt.strategy';
 describe('Authenticated endpoint with role', () => {
   let app: INestApplication;
   let jwtStrategy: JwtStrategy;
